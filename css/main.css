@@ -1,7 +1,13 @@
 body {
+	min-height: 100vh;
 	color: #1a202c;
 	text-align: left;
 	background-color: #000000;
+}
+
+main {
+	display: flex;
+	min-height: 95vh;
 }
 
 .card {

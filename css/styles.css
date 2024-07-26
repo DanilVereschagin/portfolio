@@ -1,5 +1,6 @@
 /* styles.css */
 body {
+	min-height: 95vh;
 	background-color: black;
 }
 
@@ -35,4 +36,5 @@ footer {
 	padding: 1em;
 	text-align: center;
 	clear: both;
+	flex-shrink: 0;
 }
