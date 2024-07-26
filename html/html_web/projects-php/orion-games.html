@@ -3,18 +3,338 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Личная информация</title>
+		<title>Orion Games</title>
+
 		<link
+			href="../../../vendor/bootstrap/css/bootstrap.min.css"
 			rel="stylesheet"
-			href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
 		/>
+		<link rel="stylesheet" href="../../../css/templatemo-style.css" />
 		<link rel="stylesheet" href="../../../css/styles.css" />
 		<link rel="stylesheet" href="../../../css/pushbutton.css" />
-		<link rel="stylesheet" href="../../../css/projects-sub.css" />
 	</head>
 	<body>
 		<div id="navbar_content"></div>
-		<main>jgf</main>
+		<main>
+			<div id="page-wraper">
+				<section class="section about-me" data-section="section1">
+					<div class="container">
+						<div class="section-heading">
+							<h2>Orion Games</h2>
+							<div class="line-dec"></div>
+							<span
+								>Orion Games - онлайн магазин игр. Ссылка на код -
+								<a
+									href="https://github.com/DanilVereschagin/Orion-Games"
+									style="color: rgb(39, 223, 255)"
+									>"Перейти"</a
+								>.</span
+							>
+						</div>
+						<div class="left-image-post">
+							<div class="row">
+								<div class="col-md-6">
+									<div class="left-image">
+										<img
+											src="../../../image/image-web/image-web-php/orion-games/Главная страница.png"
+											alt=""
+										/>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="right-text">
+										<h4>Пользовательская часть сайта</h4>
+										<p>
+											Пользователи могут покупать, добавлять в библиотеку,
+											скачивать и комментировать игры. Также есть страницы
+											личного кабинета и библиотеки игр. На главной странице
+											выводится список всех пользователей.
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="right-image-post">
+							<div class="row">
+								<div class="col-md-6">
+									<div class="left-text">
+										<h4>Админская часть сайта</h4>
+										<p>
+											Администратор может изменять данные пользователей и
+											удалять их, а также добавлять и удалять новые игры и
+											компании. В том числе ему доступна возможность совершить
+											email-рассылку всем пользователям.
+										</p>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="right-image">
+										<img
+											src="../../../image/image-web/image-web-php/orion-games/Главная страница админки.png"
+											alt=""
+										/>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section class="section my-services" data-section="section2">
+					<div class="container">
+						<div class="section-heading">
+							<h2>Используемые технологии</h2>
+							<div class="line-dec"></div>
+							<span>
+								Ниже представлены технологии, используемые для данного проекта.
+								В данном проекте не были использованы серверные фреймворки.
+							</span>
+						</div>
+						<div class="row">
+							<div class="col-md-6">
+								<div class="service-item">
+									<div class="first-service-icon service-icon"></div>
+									<h4>HTML5, CSS3 и Bootstrap</h4>
+									<p>
+										Для пользовательской части сайта использовались html5, css3
+										и bootstrap.
+									</p>
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="service-item">
+									<div class="first-service-icon service-icon"></div>
+									<h4>Шаблоны</h4>
+									<p>
+										Были использованы бесплатные шаблоны youplay, которые в
+										дальнейшем были переработаны под данный проект.
+									</p>
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="service-item">
+									<div class="second-service-icon service-icon"></div>
+									<h4>PHP</h4>
+									<p>
+										Серверная часть написана на чистом PHP(включая библиотеки).
+									</p>
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="service-item">
+									<div class="third-service-icon service-icon"></div>
+									<h4>MySQL и PDO</h4>
+									<p>
+										Как база данных использовалась MeSQL. Для взаимодействия с
+										сервером использовалась библиотека PDO.
+									</p>
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="service-item">
+									<div class="third-service-icon service-icon"></div>
+									<h4>Nginx</h4>
+									<p>Сайт стоял на веб-cервере Nginx.</p>
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="service-item">
+									<div class="third-service-icon service-icon"></div>
+									<h4>Redis(кэш и сессии)</h4>
+									<p>
+										В данном проекте реализованы сисетмы сессий и кэширования с
+										использованием Redis.
+									</p>
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="service-item">
+									<div class="third-service-icon service-icon"></div>
+									<h4>DI</h4>
+									<p>
+										В данном проекте реализована своя система DI(внедрение
+										зависимостей)
+									</p>
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="service-item">
+									<div class="third-service-icon service-icon"></div>
+									<h4>XSS и CRLF защиты</h4>
+									<p>
+										В данном проекте реализованы защиты от XSS(распространенный
+										тип веб-атаки, заключающийся во внедрении на страницу сайта
+										или приложения вредоносного кода) и CRLF(уязвимость,
+										позволяющая злоумышленнику внедрить символы перевода строки
+										в запрос, тем самым изменив логику работы программы) атак.
+									</p>
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="service-item">
+									<div class="third-service-icon service-icon"></div>
+									<h4>Mail</h4>
+									<p>Реализована возможность email-рассылки пользователям.</p>
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="service-item">
+									<div class="third-service-icon service-icon"></div>
+									<h4>API</h4>
+									<p>
+										Данный проект получил реализацию своих собственный API(при
+										постановки на глобальный хостинг есть возможность получать с
+										него информацию со сторонних сайтов). Реализовано
+										взаимодействие с API Стима(Steam). На интерфейсе магазина
+										игры из Стима имеют чёрный фон, а не прозрачный.
+									</p>
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="service-item">
+									<div class="third-service-icon service-icon"></div>
+									<h4>CLI</h4>
+									<p>
+										Реализована система автоматических действий через cron(сбор
+										информации, отправка рассылок, обновление закэшированных
+										данных).
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section class="section my-work" data-section="section3">
+					<div class="container">
+						<div class="section-heading">
+							<h2>Изображения сайта</h2>
+							<div class="line-dec"></div>
+							<span
+								>Нижу представлены изображения сайта от лица пользователя и
+								администратора.</span
+							>
+						</div>
+						<div class="row">
+							<div class="isotope-item">
+								<img
+									src="../../../image/image-web/image-web-php/orion-games/Регистрация.png"
+									alt=""
+								/>
+							</div>
+
+							<div class="isotope-item" data-type="nature">
+								<img
+									src="../../../image/image-web/image-web-php/orion-games/Логин.png"
+									alt=""
+								/>
+							</div>
+
+							<div class="isotope-item">
+								<img
+									src="../../../image/image-web/image-web-php/orion-games/Главная страница.png"
+									alt=""
+								/>
+							</div>
+
+							<div class="isotope-item" data-type="nature">
+								<img
+									src="../../../image/image-web/image-web-php/orion-games/Магазин игр.png"
+									alt=""
+								/>
+							</div>
+
+							<div class="isotope-item" data-type="nature">
+								<img
+									src="../../../image/image-web/image-web-php/orion-games/Страница игры.png"
+									alt=""
+								/>
+							</div>
+
+							<div class="isotope-item" data-type="nature">
+								<img
+									src="../../../image/image-web/image-web-php/orion-games/Комментарии к игре.png"
+									alt=""
+								/>
+							</div>
+
+							<div class="isotope-item" data-type="nature">
+								<img
+									src="../../../image/image-web/image-web-php/orion-games/Личный кабинет.png"
+									alt=""
+								/>
+							</div>
+
+							<div class="isotope-item" data-type="nature">
+								<img
+									src="../../../image/image-web/image-web-php/orion-games/Библиотека игр.png"
+									alt=""
+								/>
+							</div>
+
+							<div class="isotope-item" data-type="nature">
+								<img
+									src="../../../image/image-web/image-web-php/orion-games/Страница другого пользователя.png"
+									alt=""
+								/>
+							</div>
+
+							<div class="isotope-item">
+								<img
+									src="../../../image/image-web/image-web-php/orion-games/Главная страница админки.png"
+									alt=""
+								/>
+							</div>
+
+							<div class="isotope-item" data-type="nature">
+								<img
+									src="../../../image/image-web/image-web-php/orion-games/Список игроков админки.png"
+									alt=""
+								/>
+							</div>
+
+							<div class="isotope-item">
+								<img
+									src="../../../image/image-web/image-web-php/orion-games/Список игр админки.png"
+									alt=""
+								/>
+							</div>
+
+							<div class="isotope-item" data-type="nature">
+								<img
+									src="../../../image/image-web/image-web-php/orion-games/Список компаний.png"
+									alt=""
+								/>
+							</div>
+
+							<div class="isotope-item">
+								<img
+									src="../../../image/image-web/image-web-php/orion-games/Добавить игру.png"
+									alt=""
+								/>
+							</div>
+
+							<div class="isotope-item" data-type="nature">
+								<img
+									src="../../../image/image-web/image-web-php/orion-games/Добавить компанию.png"
+									alt=""
+								/>
+							</div>
+
+							<div class="isotope-item" data-type="nature">
+								<img
+									src="../../../image/image-web/image-web-php/orion-games/404.png"
+									alt=""
+								/>
+							</div>
+						</div>
+					</div>
+				</section>
+			</div>
+		</main>
+		<footer>
+			<p>&copy; 2024 Верещагин Данил</p>
+		</footer>
 		<script src="../../../js/navbar-item.js"></script>
 	</body>
 </html>
