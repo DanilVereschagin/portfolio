@@ -8,12 +8,13 @@
 body {
 	justify-content: center;
 	align-items: center;
-	min-height: 100vh;
+	min-height: 90vh;
 	background: #1d061a;
 }
 
 main {
 	display: flex;
+	min-height: 90vh;
 }
 
 .container {

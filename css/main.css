@@ -1,5 +1,5 @@
 body {
-	min-height: 100vh;
+	min-height: 90vh;
 	color: #1a202c;
 	text-align: left;
 	background-color: #000000;
@@ -7,7 +7,7 @@ body {
 
 main {
 	display: flex;
-	min-height: 95vh;
+	min-height: 90vh;
 }
 
 .card {
