@@ -1,7 +1,7 @@
 function loadNavbar() {
 	const box = document.getElementById('navbar_content');
 
-	fetch('./navbar/navbar.js')
+	fetch('./navbar/navbar.html')
 		.then(response => response.text())
 		.then(html => {
 			box.innerHTML = html;
