@@ -96,6 +96,11 @@ main {
 	background: linear-gradient(315deg, #ffffff, #008cff);
 }
 
+.container .box:nth-child(6):before,
+.container .box:nth-child(6):after {
+	background: linear-gradient(315deg, #00ff37, #00eeff);
+}
+
 .container .box span {
 	display: block;
 	position: absolute;

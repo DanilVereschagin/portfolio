@@ -76,14 +76,24 @@ main {
 	background: linear-gradient(315deg, #ffbc00, #ff0058);
 }
 
-.container .box:nth-child(2):before,
+/* .container .box:nth-child(2):before,
 .container .box:nth-child(2):after {
 	background: linear-gradient(315deg, #03a9f4, #ff0058);
+} */
+
+.container .box:nth-child(2):before,
+.container .box:nth-child(2):after {
+	background: linear-gradient(315deg, #3d3d3d, #dbdbdb);
 }
+
+/* .container .box:nth-child(3):before,
+.container .box:nth-child(3):after {
+	background: linear-gradient(315deg, #4dff03, #00d0ff);
+} */
 
 .container .box:nth-child(3):before,
 .container .box:nth-child(3):after {
-	background: linear-gradient(315deg, #4dff03, #00d0ff);
+	background: linear-gradient(315deg, #3d3d3d, #dbdbdb);
 }
 
 .container .box:nth-child(4):before,
