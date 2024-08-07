@@ -1,5 +1,6 @@
 body {
 	min-height: 90vh;
+	min-width: 90%;
 	color: #1a202c;
 	text-align: left;
 	background-color: #000000;
@@ -8,6 +9,7 @@ body {
 main {
 	display: flex;
 	min-height: 90vh;
+	min-width: 90%;
 }
 
 .card {
