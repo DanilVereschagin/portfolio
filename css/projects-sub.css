@@ -93,11 +93,16 @@ main {
 
 .container .box:nth-child(5):before,
 .container .box:nth-child(5):after {
-	background: linear-gradient(315deg, #ffffff, #008cff);
+	background: linear-gradient(315deg, #ffffff, #b4b4b4, #000000);
 }
 
 .container .box:nth-child(6):before,
 .container .box:nth-child(6):after {
+	background: linear-gradient(315deg, #ffffff, #008cff);
+}
+
+.container .box:nth-child(7):before,
+.container .box:nth-child(7):after {
 	background: linear-gradient(315deg, #00ff37, #00eeff);
 }
 
