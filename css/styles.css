@@ -2,6 +2,7 @@
 body {
 	min-height: 90vh;
 	background-color: black;
+	/* width: 100vw; */
 }
 
 header {
@@ -31,10 +32,7 @@ header {
 }
 
 footer {
-	background-color: #333;
 	color: #fff;
-	padding: 1em;
+	padding: 10px;
 	text-align: center;
-	clear: both;
-	flex-shrink: 0;
 }
