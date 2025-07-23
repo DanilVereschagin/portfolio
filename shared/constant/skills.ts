@@ -240,8 +240,25 @@ export const skills = [
 	},
 ];
 
-/*
-- basic
-- average
-- advanced
-*/
+export const levels = [
+	{
+		en: 'advanced',
+		ru: 'Продвинутый',
+	},
+	{
+		en: 'average',
+		ru: 'Средний',
+	},
+	{
+		en: 'basic',
+		ru: 'Базовый',
+	},
+];
+
+export const types = [
+	'language',
+	'frontend',
+	'backend',
+	'database',
+	'devtools',
+];

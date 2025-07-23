@@ -5,7 +5,7 @@ const SkillsTab = () => {
 	const { activeTab, setActiveTab } = useSkillsStore();
 
 	return (
-		<div className='flex gap-4 bg-transparent text-lg sticky top-23'>
+		<div className='flex gap-4 bg-transparent text-lg'>
 			<SkillsButton
 				name='Уровень навыков'
 				tab='level'

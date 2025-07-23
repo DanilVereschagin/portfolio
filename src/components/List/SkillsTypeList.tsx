@@ -1,31 +1,33 @@
 import { memo } from 'react';
-import { skills, levels } from '../../../shared/constant/skills';
+import { skills, types } from '../../../shared/constant/skills';
 import type { skillType } from '../../../shared/types/types';
 
-type GroupByLevel = {
+type GroupByType = {
 	[key: string]: skillType[];
 };
 
-const SkillsLevelList = memo(() => {
-	const groupByLevel: GroupByLevel = skills.reduce((acc, item) => {
-		if (!acc[item.level]) {
-			acc[item.level] = [];
+const SkillsTypeList = memo(() => {
+	const groupByType: GroupByType = skills.reduce((acc, item) => {
+		if (!acc[item.type]) {
+			acc[item.type] = [];
 		}
-		acc[item.level].push(item);
+		acc[item.type].push(item);
 		return acc;
-	}, {} as GroupByLevel);
+	}, {} as GroupByType);
 
 	return (
 		<div className='mt-10 p-2'>
 			<div className='flex flex-col gap-4'>
-				{levels.map((level) => (
+				{types.map((type) => (
 					<div
-						key={level.en}
+						key={type}
 						className='bg-gray-950 rounded-xl p-4 flex flex-col gap-4'
 					>
-						<h1 className='text-white text-2xl'>{level.ru}</h1>
+						<h1 className='text-white text-2xl'>
+							{type[0].toUpperCase() + type.slice(1)}
+						</h1>
 						<div className='flex flex-row gap-4 flex-wrap'>
-							{groupByLevel[`${level.en}`].map((skill: skillType) => (
+							{groupByType[`${type}`].map((skill: skillType) => (
 								<div
 									key={skill.id}
 									className='bg-white w-[100px] h-[110px] 
@@ -50,4 +52,4 @@ const SkillsLevelList = memo(() => {
 	);
 });
 
-export default SkillsLevelList;
+export default SkillsTypeList;
