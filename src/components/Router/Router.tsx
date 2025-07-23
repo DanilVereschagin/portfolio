@@ -7,10 +7,10 @@ import Projects from '../../pages/Projects';
 const Router = () => {
 	return (
 		<Routes>
-			<Route path='/' Component={Home} />
-			<Route path='/about' Component={About} />
-			<Route path='/skills' Component={Skills} />
-			<Route path='/projects' Component={Projects} />
+			<Route path='portfolio/' Component={Home} />
+			<Route path='portfolio/about' Component={About} />
+			<Route path='portfolio/skills' Component={Skills} />
+			<Route path='portfolio/projects' Component={Projects} />
 		</Routes>
 	);
 };
