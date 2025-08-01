@@ -40,6 +40,7 @@ const SkillsTypeList = memo(() => {
 										height={90}
 										src={skill.icon}
 										alt={skill.title}
+										loading='lazy'
 									/>
 									<b>{skill.title}</b>
 								</div>

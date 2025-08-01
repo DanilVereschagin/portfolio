@@ -23,8 +23,10 @@ const SkillsLevelList = memo(() => {
 						key={level.en}
 						className='bg-gray-950 rounded-xl p-4 flex flex-col gap-4'
 					>
-						<h1 className='text-white text-2xl'>{level.ru}</h1>
-						<div className='flex flex-row gap-4 flex-wrap'>
+						<h1 className='text-white text-2xl text-center lg:text-start'>
+							{level.ru}
+						</h1>
+						<div className='flex flex-row gap-4 flex-wrap justify-center lg:justify-start'>
 							{groupByLevel[`${level.en}`].map((skill: skillType) => (
 								<div
 									key={skill.id}
@@ -38,6 +40,7 @@ const SkillsLevelList = memo(() => {
 										height={90}
 										src={skill.icon}
 										alt={skill.title}
+										loading='lazy'
 									/>
 									<b>{skill.title}</b>
 								</div>

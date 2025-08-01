@@ -13,7 +13,7 @@ export const Link: React.FC<Props> = ({ url, title, className }) => {
 		<NavLink
 			to={url}
 			className={cn(
-				'p-2 text-lg border border-fuchsia-400 rounded-xl  bg-white text-black shadow-xl/30 shadow-purple-400 hover:bg-transparent hover:text-white hover:shadow-none',
+				'text-sm md:text-lg p-2 border border-fuchsia-400 rounded-xl bg-white text-black shadow-xl/30 shadow-purple-400 hover:bg-transparent hover:text-white hover:shadow-none',
 				className
 			)}
 		>

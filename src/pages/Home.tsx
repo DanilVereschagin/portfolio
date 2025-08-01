@@ -4,7 +4,7 @@ import classes from '../components/Card/MainCard.module.scss';
 
 const Home = () => {
 	return (
-		<div className={cn(classes.container, 'mt-40')}>
+		<div className={cn(classes.container, 'lg:mt-20 lg:gap-10')}>
 			<MainCard title='Обо мне' info='Контактная информация' url='about' />
 			<MainCard
 				title='Навыки'
