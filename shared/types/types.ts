@@ -17,3 +17,18 @@ export type typeType =
 	| 'devtools'
 	| 'database'
 	| 'language';
+
+export type projectType = {
+	id: number;
+	title: string;
+	description: string;
+	image: string;
+	url: string;
+	github: string;
+	tools: {
+		title: string;
+		description: string;
+		icon: string;
+	}[];
+	images_gallery: string;
+};
