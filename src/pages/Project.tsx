@@ -1,4 +1,4 @@
-import { memo, useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { projects } from '../../shared/constant/projects';
 import NotFound from './NotFound';
 import { Title } from '../components/Project/Title';

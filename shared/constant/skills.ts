@@ -211,6 +211,20 @@ export const skills = [
 		type: 'frontend',
 	},
 	{
+		id: 35,
+		title: 'Zod',
+		level: 'average',
+		icon: 'logo/zod.webp',
+		type: 'frontend',
+	},
+	{
+		id: 36,
+		title: 'Jest',
+		level: 'average',
+		icon: 'logo/jest.webp',
+		type: 'devtools',
+	},
+	{
 		id: 31,
 		title: 'Webpack',
 		level: 'average',
@@ -222,6 +236,13 @@ export const skills = [
 		title: 'Vite',
 		level: 'average',
 		icon: 'logo/vite.avif',
+		type: 'devtools',
+	},
+	{
+		id: 37,
+		title: 'Nginx',
+		level: 'average',
+		icon: 'logo/nginx.avif',
 		type: 'devtools',
 	},
 	{

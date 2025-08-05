@@ -30,7 +30,7 @@ export const Tools: React.FC<Props> = ({ tools, className }) => {
 						</div>
 						<div
 							className='w-full bg-white justify-center-safe text-lg md:text-2xl
-						flex flex-col items-center p-3 rounded-xl
+						flex flex-col items-center text-center p-3 rounded-xl
 						shadow-xl/15 shadow-white hover:shadow-xl/30 
 						transform '
 						>
