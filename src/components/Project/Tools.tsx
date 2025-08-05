@@ -9,7 +9,6 @@ interface Props {
 export const Tools: React.FC<Props> = ({ tools, className }) => {
 	return (
 		<div className={className}>
-			<h1>Tools</h1>
 			<div className='flex flex-col flex-wrap justify-center gap-4'>
 				{tools.map((tool) => (
 					<div key={tool.title} className='flex flex-row gap-4'>

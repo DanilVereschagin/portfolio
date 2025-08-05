@@ -84,7 +84,7 @@ export const projects = [
 				icon: 'logo/jest.webp',
 			},
 		],
-		images_gallery: 'assets/Web/OrionDelivery/',
+		images_gallery: [],
 	},
 	{
 		id: 2,
@@ -148,7 +148,55 @@ export const projects = [
 				icon: 'logo/axios.avif',
 			},
 		],
-		images_gallery: 'assets/Web/OrionGames/',
+		images_gallery: [
+			{
+				url: 'assets/Web/TechDeviceStore/Регистрация.png',
+				description: 'Страница регистрации.',
+			},
+			{
+				url: 'assets/Web/TechDeviceStore/Авторизация.png',
+				description:
+					'Страница авторизации. Если нет аккаунта, то можно перейти на страницу регистрации',
+			},
+			{
+				url: 'assets/Web/TechDeviceStore/Гость.png',
+				description: 'Вид главной страницы для гостя',
+			},
+			{
+				url: 'assets/Web/TechDeviceStore/Вид_пользователя.png',
+				description: 'Вид главной страницы для авторизованного пользователя',
+			},
+			{
+				url: 'assets/Web/TechDeviceStore/Вид_админа.png',
+				description: 'Вид главной страницы для администратора',
+			},
+			{
+				url: 'assets/Web/TechDeviceStore/Страница_устройства.png',
+				description:
+					'Страница устройства, где указаны его характеристики, оценка и кнопка добавления в корзину',
+			},
+			{
+				url: 'assets/Web/TechDeviceStore/Корзина.png',
+				description:
+					'Страница корзины со списком товаров и суммой заказа. Товары можно удалять из корзины',
+			},
+			{
+				url: 'assets/Web/TechDeviceStore/Админка.png',
+				description: 'Страница администратора',
+			},
+			{
+				url: 'assets/Web/TechDeviceStore/Новое_устройство.png',
+				description: 'Страница создания устройства',
+			},
+			{
+				url: 'assets/Web/TechDeviceStore/Новый_бренд.png',
+				description: 'Страница создания бренда',
+			},
+			{
+				url: 'assets/Web/TechDeviceStore/Новый_тип.png',
+				description: 'Страница создания типа устройства',
+			},
+		],
 	},
 	{
 		id: 3,
@@ -186,6 +234,76 @@ export const projects = [
 				icon: 'logo/redis.avif',
 			},
 		],
-		images_gallery: 'assets/Web/OrionGames/',
+		images_gallery: [
+			{
+				url: 'assets/Web/OrionGames/Регистрация.png',
+				description: 'Страница регистрации',
+			},
+			{
+				url: 'assets/Web/OrionGames/Логин.png',
+				description: 'Страница авторизации',
+			},
+			{
+				url: 'assets/Web/OrionGames/Главная_страница.png',
+				description: 'Вид главной страницы со списком пользователей',
+			},
+			{
+				url: 'assets/Web/OrionGames/Личный_кабинет.png',
+				description: 'Личный кабинет с информацией о пользователе',
+			},
+			{
+				url: 'assets/Web/OrionGames/Страница_другого_пользователя.png',
+				description: 'Страница другого пользователя с информацией о нем',
+			},
+			{
+				url: 'assets/Web/OrionGames/Библиотека_игр.png',
+				description: 'Библиотека игр пользователя',
+			},
+			{
+				url: 'assets/Web/OrionGames/Магазин_игр.png',
+				description:
+					'Страница магазина игр, где представлены также игры из Steam(чёрный фон карточек)',
+			},
+			{
+				url: 'assets/Web/OrionGames/Страница_игры.png',
+				description: 'Страница с информацией об игре',
+			},
+			{
+				url: 'assets/Web/OrionGames/Комментарии_к_игре.png',
+				description: 'Комментарии к игре',
+			},
+			{
+				url: 'assets/Web/OrionGames/Главная_страница_админки.png',
+				description: 'Главная страница админки со списком администраторов',
+			},
+			{
+				url: 'assets/Web/OrionGames/Список_игроков_админки.png',
+				description:
+					'Страница со списком игроков и кнопкой отправки электронных писем пользователям',
+			},
+			{
+				url: 'assets/Web/OrionGames/Список_игр_админки.png',
+				description:
+					'Страница со списком игр в админке и кнопкой добавления новой игры',
+			},
+			{
+				url: 'assets/Web/OrionGames/Добавить_игру.png',
+				description: 'Страница с формой добавления игры',
+			},
+			{
+				url: 'assets/Web/OrionGames/Список_компаний.png',
+				description:
+					'Страница со списком компаний и кнопкой добавления новой компании',
+			},
+			{
+				url: 'assets/Web/OrionGames/Добавить_компанию.png',
+				description: 'Страница с формой добавления компании',
+			},
+			{
+				url: 'assets/Web/OrionGames/404.png',
+				description:
+					'Страница с ошибкой 404, на которую попадают пользователи с неправильным URL',
+			},
+		],
 	},
 ];

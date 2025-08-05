@@ -4,6 +4,7 @@ import NotFound from './NotFound';
 import { Title } from '../components/Project/Title';
 import type { projectType } from '../../shared/types/types';
 import { Tools } from '../components/Project/Tools';
+import { Images } from '../components/Project/Images';
 
 const Project = () => {
 	const [projectName, setProjectName] = useState('');
@@ -15,7 +16,7 @@ const Project = () => {
 		url: '',
 		github: '',
 		tools: [],
-		images_gallery: '',
+		images_gallery: [],
 	});
 
 	useEffect(() => {
@@ -24,7 +25,7 @@ const Project = () => {
 		);
 		if (project) {
 			setProjectName(project.title);
-			setProject(project);
+			setProject(project as projectType);
 		}
 	}, []);
 
@@ -49,6 +50,12 @@ const Project = () => {
 				tools={project.tools}
 				className='m-4 w-full md:w-[80%] lg:w-[60%]'
 			/>
+			{project.images_gallery.length > 0 && (
+				<Images
+					images={project.images_gallery}
+					className='m-4 w-full md:w-[80%] lg:w-[60%]'
+				/>
+			)}
 		</div>
 	);
 };

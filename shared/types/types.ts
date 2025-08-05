@@ -30,5 +30,8 @@ export type projectType = {
 		description: string;
 		icon: string;
 	}[];
-	images_gallery: string;
+	images_gallery: {
+		url: string;
+		description: string;
+	}[];
 };
