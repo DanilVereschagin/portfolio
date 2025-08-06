@@ -84,7 +84,63 @@ export const projects = [
 				icon: 'logo/jest.webp',
 			},
 		],
-		images_gallery: [],
+		images_gallery: [
+			{
+				url: 'assets/Web/OrionDelivery/2.png',
+				description:
+					'Страница регистрации и авторизации с возможностью входа через сторонние сервисы',
+			},
+			{
+				url: 'assets/Web/OrionDelivery/1.png',
+				description: 'Главная страница со списком блюд и фильтрами',
+			},
+			{
+				url: 'assets/Web/OrionDelivery/3.png',
+				description:
+					'Модальное окно блюда с возможностью выбора вариаций и дополнительных ингредиентов',
+			},
+			{
+				url: 'assets/Web/OrionDelivery/4.png',
+				description:
+					'Страница с информацией о конкретном блюде. Функционал идентичен модальному окну, а также есть возможность оставлять и просматривать отзывы',
+			},
+			{
+				url: 'assets/Web/OrionDelivery/5.png',
+				description:
+					'Корзина с возможностью изменения количества блюд или их удалением',
+			},
+			{
+				url: 'assets/Web/OrionDelivery/6.png',
+				description:
+					'Страница оформления заказа. Присутствует возможность выбора типа доставки, а также активации промокода',
+			},
+			{
+				url: 'assets/Web/OrionDelivery/7.png',
+				description: 'Страница оплаты заказа',
+			},
+			{
+				url: 'assets/Web/OrionDelivery/8.png',
+				description: 'Страница профиля пользователя со списком его заказов',
+			},
+			{
+				url: 'assets/Web/OrionDelivery/9.png',
+				description:
+					'Страница админ-панели с информацией о заказах и возможностью изменения их статуса',
+			},
+			{
+				url: 'assets/Web/OrionDelivery/10.png',
+				description:
+					'Страница со списком пользователей и возможностью редактирования информации о них',
+			},
+			{
+				url: 'assets/Web/OrionDelivery/11.png',
+				description: 'Страница со статистикой продаж',
+			},
+			{
+				url: 'assets/Web/OrionDelivery/12.png',
+				description: 'Страница создания промокодов',
+			},
+		],
 	},
 	{
 		id: 2,
