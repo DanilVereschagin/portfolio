@@ -9,23 +9,11 @@ import NotFound from '../../pages/NotFound';
 const Router = () => {
 	return (
 		<Routes>
-			<Route key={'portfolio/'} path='portfolio/' Component={Home} />
-			<Route key={'portfolio/about'} path='portfolio/about' Component={About} />
-			<Route
-				key={'portfolio/skills'}
-				path='portfolio/skills'
-				Component={Skills}
-			/>
-			<Route
-				key={'portfolio/projects'}
-				path='portfolio/projects'
-				Component={Projects}
-			/>
-			<Route
-				key={'portfolio/projects/*'}
-				path='portfolio/projects/*'
-				Component={Project}
-			/>
+			<Route key={''} path='' Component={Home} />
+			<Route key={'about'} path='about' Component={About} />
+			<Route key={'skills'} path='skills' Component={Skills} />
+			<Route key={'projects'} path='projects' Component={Projects} />
+			<Route key={'projects/*'} path='/projects/*' Component={Project} />
 			<Route key={'*'} path='*' Component={NotFound} />
 		</Routes>
 	);

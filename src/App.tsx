@@ -1,16 +1,16 @@
-import { HashRouter } from 'react-router-dom';
+import { BrowserRouter } from 'react-router-dom';
 import { Header } from './components/Header/Header';
 import Router from './components/Router/Router';
 import { Container } from './components/Container/Container';
 
 function App() {
 	return (
-		<HashRouter>
+		<BrowserRouter basename='/portfolio'>
 			<Header />
 			<Container>
 				<Router />
 			</Container>
-		</HashRouter>
+		</BrowserRouter>
 	);
 }
 
