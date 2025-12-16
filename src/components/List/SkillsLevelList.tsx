@@ -1,6 +1,6 @@
 import { memo } from 'react';
-import { skills, levels } from '../../../shared/constant/skills';
-import type { skillType } from '../../../shared/types/types';
+import { skills, levels } from '../../shared/constant/skills';
+import type { skillType } from '../../shared/types/types';
 import * as motion from 'motion/react-client';
 
 type GroupByLevel = {

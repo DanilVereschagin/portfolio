@@ -1,4 +1,4 @@
-import { cn } from '../../shared/lib/utils';
+import { cn } from '../shared/lib/utils';
 import MainCard from '../components/Card/MainCard';
 import classes from '../components/Card/MainCard.module.scss';
 

@@ -1,6 +1,6 @@
 import { Link } from '../components/Link/Link';
 import { memo } from 'react';
-import { projects } from '../../shared/constant/projects';
+import { projects } from '../shared/constant/projects';
 
 const Projects = memo(() => {
 	return (

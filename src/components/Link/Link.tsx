@@ -1,6 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import { cn } from '../../../shared/lib/utils';
+import { cn } from '../../shared/lib/utils';
 
 interface Props {
 	url: string;

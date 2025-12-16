@@ -1,5 +1,5 @@
 import React from 'react';
-import type { projectType } from '../../../shared/types/types';
+import type { projectType } from '../../shared/types/types';
 
 interface Props {
 	images: projectType['images_gallery'];
@@ -13,12 +13,12 @@ export const Images: React.FC<Props> = ({ images, className }) => {
 				{images.map((image) => (
 					<div key={image.url} className='flex flex-row gap-4'>
 						<img
-							className='w-full md:w-[50%] rounded-2xl'
-							src={'../' + image.url}
+							className='w-[50%] rounded-2xl'
+							src={image.url}
 							alt=''
 							loading='lazy'
 						/>
-						<div className='hidden md:flex bg-white text-lg lg:text-xl text-center w-full rounded-2xl p-2 justify-center items-center-safe'>
+						<div className='hidden md:flex bg-white text-lg lg:text-xl text-center w-[50%] rounded-2xl p-2 justify-center items-center-safe'>
 							{image.description}
 						</div>
 					</div>

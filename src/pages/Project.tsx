@@ -1,8 +1,8 @@
 import { useEffect, useState } from 'react';
-import { projects } from '../../shared/constant/projects';
+import { projects } from '../shared/constant/projects';
 import NotFound from './NotFound';
 import { Title } from '../components/Project/Title';
-import type { projectType } from '../../shared/types/types';
+import type { projectType } from '../shared/types/types';
 import { Tools } from '../components/Project/Tools';
 import { Images } from '../components/Project/Images';
 
@@ -43,7 +43,7 @@ const Project = () => {
 			/>
 			<img
 				className='w-full md:w-[80%] lg:w-[60%]'
-				src={'../' + project.image}
+				src={project.image}
 				alt={projectName}
 			/>
 			<Tools

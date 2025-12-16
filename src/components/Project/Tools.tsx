@@ -1,5 +1,5 @@
 import React from 'react';
-import type { projectType } from '../../../shared/types/types';
+import type { projectType } from '../../shared/types/types';
 
 interface Props {
 	tools: projectType['tools'];

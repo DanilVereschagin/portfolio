@@ -1,5 +1,5 @@
 import { SkillsButton } from '../Button/SkillsButton';
-import { useSkillsStore } from '../../../shared/store/skills';
+import { useSkillsStore } from '../../shared/store/skills';
 
 const SkillsTab = () => {
 	const { activeTab, setActiveTab } = useSkillsStore();

@@ -1,21 +1,25 @@
 import { Route, Routes } from 'react-router-dom';
-import Home from '../../pages/Home';
-import About from '../../pages/About';
-import Skills from '../../pages/Skills';
-import Projects from '../../pages/Projects';
-import Project from '../../pages/Project';
-import NotFound from '../../pages/NotFound';
+import { lazy, Suspense } from 'react';
+
+const Home = lazy(() => import('../../pages/Home'));
+const About = lazy(() => import('../../pages/About'));
+const Skills = lazy(() => import('../../pages/Skills'));
+const Projects = lazy(() => import('../../pages/Projects'));
+const Project = lazy(() => import('../../pages/Project'));
+const NotFound = lazy(() => import('../../pages/NotFound'));
 
 const Router = () => {
 	return (
-		<Routes>
-			<Route key={''} path='' Component={Home} />
-			<Route key={'about'} path='about' Component={About} />
-			<Route key={'skills'} path='skills' Component={Skills} />
-			<Route key={'projects'} path='projects' Component={Projects} />
-			<Route key={'projects/*'} path='/projects/*' Component={Project} />
-			<Route key={'*'} path='*' Component={NotFound} />
-		</Routes>
+		<Suspense fallback={<div>Загрузка...</div>}>
+			<Routes>
+				<Route path='' Component={Home} />
+				<Route path='about' Component={About} />
+				<Route path='skills' Component={Skills} />
+				<Route path='projects' Component={Projects} />
+				<Route path='/projects/*' Component={Project} />
+				<Route path='*' Component={NotFound} />
+			</Routes>
+		</Suspense>
 	);
 };
 

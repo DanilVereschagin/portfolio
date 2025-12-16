@@ -1,3 +1,49 @@
+import orionDeliveryLogo from '../../assets/Logo/orion_delivery.jpg';
+import techDeviceStoreLogo from '../../assets/Logo/tech_device_store.jpg';
+import orionGamesLogo from '../../assets/Logo/orion_games.jpg';
+
+import orionDelivery1 from '../../assets/Web/OrionDelivery/1.png';
+import orionDelivery2 from '../../assets/Web/OrionDelivery/2.png';
+import orionDelivery3 from '../../assets/Web/OrionDelivery/3.png';
+import orionDelivery4 from '../../assets/Web/OrionDelivery/4.png';
+import orionDelivery5 from '../../assets/Web/OrionDelivery/5.png';
+import orionDelivery6 from '../../assets/Web/OrionDelivery/6.png';
+import orionDelivery7 from '../../assets/Web/OrionDelivery/7.png';
+import orionDelivery8 from '../../assets/Web/OrionDelivery/8.png';
+import orionDelivery9 from '../../assets/Web/OrionDelivery/9.png';
+import orionDelivery10 from '../../assets/Web/OrionDelivery/10.png';
+import orionDelivery11 from '../../assets/Web/OrionDelivery/11.png';
+import orionDelivery12 from '../../assets/Web/OrionDelivery/12.png';
+
+import techDeviceStore1 from '../../assets/Web/TechDeviceStore/Регистрация.png';
+import techDeviceStore2 from '../../assets/Web/TechDeviceStore/Авторизация.png';
+import techDeviceStore3 from '../../assets/Web/TechDeviceStore/Гость.png';
+import techDeviceStore4 from '../../assets/Web/TechDeviceStore/Вид_пользователя.png';
+import techDeviceStore5 from '../../assets/Web/TechDeviceStore/Вид_админа.png';
+import techDeviceStore6 from '../../assets/Web/TechDeviceStore/Страница_устройства.png';
+import techDeviceStore7 from '../../assets/Web/TechDeviceStore/Корзина.png';
+import techDeviceStore8 from '../../assets/Web/TechDeviceStore/Админка.png';
+import techDeviceStore9 from '../../assets/Web/TechDeviceStore/Новое_устройство.png';
+import techDeviceStore10 from '../../assets/Web/TechDeviceStore/Новый_бренд.png';
+import techDeviceStore11 from '../../assets/Web/TechDeviceStore/Новый_тип.png';
+
+import orionGames1 from '../../assets/Web/OrionGames/Регистрация.png';
+import orionGames2 from '../../assets/Web/OrionGames/Логин.png';
+import orionGames3 from '../../assets/Web/OrionGames/Главная_страница.png';
+import orionGames4 from '../../assets/Web/OrionGames/Личный_кабинет.png';
+import orionGames5 from '../../assets/Web/OrionGames/Страница_другого_пользователя.png';
+import orionGames6 from '../../assets/Web/OrionGames/Библиотека_игр.png';
+import orionGames7 from '../../assets/Web/OrionGames/Магазин_игр.png';
+import orionGames8 from '../../assets/Web/OrionGames/Страница_игры.png';
+import orionGames9 from '../../assets/Web/OrionGames/Комментарии_к_игре.png';
+import orionGames10 from '../../assets/Web/OrionGames/Главная_страница_админки.png';
+import orionGames11 from '../../assets/Web/OrionGames/Список_игроков_админки.png';
+import orionGames12 from '../../assets/Web/OrionGames/Список_игр_админки.png';
+import orionGames13 from '../../assets/Web/OrionGames/Добавить_игру.png';
+import orionGames14 from '../../assets/Web/OrionGames/Список_компаний.png';
+import orionGames15 from '../../assets/Web/OrionGames/Добавить_компанию.png';
+import orionGames16 from '../../assets/Web/OrionGames/404.png';
+
 export const projects = [
 	{
 		id: 1,
@@ -6,7 +52,7 @@ export const projects = [
 		technologies:
 			'TypeScript, React, Next.js, Tailwind, ShadCN, react-use, Zustand, PostgreSQL, Prisma, React Hook Form, Zod, Dadata, RESEND, Auth.js, Jest, Testing-library',
 		url: 'orion-delivery',
-		image: 'assets/Logo/orion_delivery.jpg',
+		image: orionDeliveryLogo,
 		github: 'https://github.com/DanilVereschagin/oriondelivery-frontend',
 		tools: [
 			{
@@ -86,58 +132,58 @@ export const projects = [
 		],
 		images_gallery: [
 			{
-				url: 'assets/Web/OrionDelivery/2.png',
+				url: orionDelivery2,
 				description:
 					'Страница регистрации и авторизации с возможностью входа через сторонние сервисы',
 			},
 			{
-				url: 'assets/Web/OrionDelivery/1.png',
+				url: orionDelivery1,
 				description: 'Главная страница со списком блюд и фильтрами',
 			},
 			{
-				url: 'assets/Web/OrionDelivery/3.png',
+				url: orionDelivery3,
 				description:
 					'Модальное окно блюда с возможностью выбора вариаций и дополнительных ингредиентов',
 			},
 			{
-				url: 'assets/Web/OrionDelivery/4.png',
+				url: orionDelivery4,
 				description:
 					'Страница с информацией о конкретном блюде. Функционал идентичен модальному окну, а также есть возможность оставлять и просматривать отзывы',
 			},
 			{
-				url: 'assets/Web/OrionDelivery/5.png',
+				url: orionDelivery5,
 				description:
 					'Корзина с возможностью изменения количества блюд или их удалением',
 			},
 			{
-				url: 'assets/Web/OrionDelivery/6.png',
+				url: orionDelivery6,
 				description:
 					'Страница оформления заказа. Присутствует возможность выбора типа доставки, а также активации промокода',
 			},
 			{
-				url: 'assets/Web/OrionDelivery/7.png',
+				url: orionDelivery7,
 				description: 'Страница оплаты заказа',
 			},
 			{
-				url: 'assets/Web/OrionDelivery/8.png',
+				url: orionDelivery8,
 				description: 'Страница профиля пользователя со списком его заказов',
 			},
 			{
-				url: 'assets/Web/OrionDelivery/9.png',
+				url: orionDelivery9,
 				description:
 					'Страница админ-панели с информацией о заказах и возможностью изменения их статуса',
 			},
 			{
-				url: 'assets/Web/OrionDelivery/10.png',
+				url: orionDelivery10,
 				description:
 					'Страница со списком пользователей и возможностью редактирования информации о них',
 			},
 			{
-				url: 'assets/Web/OrionDelivery/11.png',
+				url: orionDelivery11,
 				description: 'Страница со статистикой продаж',
 			},
 			{
-				url: 'assets/Web/OrionDelivery/12.png',
+				url: orionDelivery12,
 				description: 'Страница создания промокодов',
 			},
 		],
@@ -149,7 +195,7 @@ export const projects = [
 		technologies:
 			'React, Node.js, ExpressJS, PostgreSQL, Sequelize, MobX, JWT-токены, Bootstrap, Bcrypt, Axios',
 		url: 'tech-device-store',
-		image: 'assets/Logo/tech_device_store.jpg',
+		image: techDeviceStoreLogo,
 		github: 'https://github.com/DanilVereschagin/tech-devices-store',
 		tools: [
 			{
@@ -206,50 +252,50 @@ export const projects = [
 		],
 		images_gallery: [
 			{
-				url: 'assets/Web/TechDeviceStore/Регистрация.png',
+				url: techDeviceStore1,
 				description: 'Страница регистрации.',
 			},
 			{
-				url: 'assets/Web/TechDeviceStore/Авторизация.png',
+				url: techDeviceStore2,
 				description:
 					'Страница авторизации. Если нет аккаунта, то можно перейти на страницу регистрации',
 			},
 			{
-				url: 'assets/Web/TechDeviceStore/Гость.png',
+				url: techDeviceStore3,
 				description: 'Вид главной страницы для гостя',
 			},
 			{
-				url: 'assets/Web/TechDeviceStore/Вид_пользователя.png',
+				url: techDeviceStore4,
 				description: 'Вид главной страницы для авторизованного пользователя',
 			},
 			{
-				url: 'assets/Web/TechDeviceStore/Вид_админа.png',
+				url: techDeviceStore5,
 				description: 'Вид главной страницы для администратора',
 			},
 			{
-				url: 'assets/Web/TechDeviceStore/Страница_устройства.png',
+				url: techDeviceStore6,
 				description:
 					'Страница устройства, где указаны его характеристики, оценка и кнопка добавления в корзину',
 			},
 			{
-				url: 'assets/Web/TechDeviceStore/Корзина.png',
+				url: techDeviceStore7,
 				description:
 					'Страница корзины со списком товаров и суммой заказа. Товары можно удалять из корзины',
 			},
 			{
-				url: 'assets/Web/TechDeviceStore/Админка.png',
+				url: techDeviceStore8,
 				description: 'Страница администратора',
 			},
 			{
-				url: 'assets/Web/TechDeviceStore/Новое_устройство.png',
+				url: techDeviceStore9,
 				description: 'Страница создания устройства',
 			},
 			{
-				url: 'assets/Web/TechDeviceStore/Новый_бренд.png',
+				url: techDeviceStore10,
 				description: 'Страница создания бренда',
 			},
 			{
-				url: 'assets/Web/TechDeviceStore/Новый_тип.png',
+				url: techDeviceStore11,
 				description: 'Страница создания типа устройства',
 			},
 		],
@@ -260,7 +306,7 @@ export const projects = [
 		description: 'Интернет-магазин игр',
 		technologies: 'PHP, Bootstrap, MySQL, PDO, Nginx, Redis',
 		url: 'orion-games',
-		image: 'assets/Logo/orion_games.jpg',
+		image: orionGamesLogo,
 		github: 'https://github.com/DanilVereschagin/Orion-Games',
 		tools: [
 			{
@@ -292,71 +338,71 @@ export const projects = [
 		],
 		images_gallery: [
 			{
-				url: 'assets/Web/OrionGames/Регистрация.png',
+				url: orionGames1,
 				description: 'Страница регистрации',
 			},
 			{
-				url: 'assets/Web/OrionGames/Логин.png',
+				url: orionGames2,
 				description: 'Страница авторизации',
 			},
 			{
-				url: 'assets/Web/OrionGames/Главная_страница.png',
+				url: orionGames3,
 				description: 'Вид главной страницы со списком пользователей',
 			},
 			{
-				url: 'assets/Web/OrionGames/Личный_кабинет.png',
+				url: orionGames4,
 				description: 'Личный кабинет с информацией о пользователе',
 			},
 			{
-				url: 'assets/Web/OrionGames/Страница_другого_пользователя.png',
+				url: orionGames5,
 				description: 'Страница другого пользователя с информацией о нем',
 			},
 			{
-				url: 'assets/Web/OrionGames/Библиотека_игр.png',
+				url: orionGames6,
 				description: 'Библиотека игр пользователя',
 			},
 			{
-				url: 'assets/Web/OrionGames/Магазин_игр.png',
+				url: orionGames7,
 				description:
 					'Страница магазина игр, где представлены также игры из Steam(чёрный фон карточек)',
 			},
 			{
-				url: 'assets/Web/OrionGames/Страница_игры.png',
+				url: orionGames8,
 				description: 'Страница с информацией об игре',
 			},
 			{
-				url: 'assets/Web/OrionGames/Комментарии_к_игре.png',
+				url: orionGames9,
 				description: 'Комментарии к игре',
 			},
 			{
-				url: 'assets/Web/OrionGames/Главная_страница_админки.png',
+				url: orionGames10,
 				description: 'Главная страница админки со списком администраторов',
 			},
 			{
-				url: 'assets/Web/OrionGames/Список_игроков_админки.png',
+				url: orionGames11,
 				description:
 					'Страница со списком игроков и кнопкой отправки электронных писем пользователям',
 			},
 			{
-				url: 'assets/Web/OrionGames/Список_игр_админки.png',
+				url: orionGames12,
 				description:
 					'Страница со списком игр в админке и кнопкой добавления новой игры',
 			},
 			{
-				url: 'assets/Web/OrionGames/Добавить_игру.png',
+				url: orionGames13,
 				description: 'Страница с формой добавления игры',
 			},
 			{
-				url: 'assets/Web/OrionGames/Список_компаний.png',
+				url: orionGames14,
 				description:
 					'Страница со списком компаний и кнопкой добавления новой компании',
 			},
 			{
-				url: 'assets/Web/OrionGames/Добавить_компанию.png',
+				url: orionGames15,
 				description: 'Страница с формой добавления компании',
 			},
 			{
-				url: 'assets/Web/OrionGames/404.png',
+				url: orionGames16,
 				description:
 					'Страница с ошибкой 404, на которую попадают пользователи с неправильным URL',
 			},
