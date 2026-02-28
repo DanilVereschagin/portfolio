@@ -1,15 +1,56 @@
-export const skills = [
+export const skills: {
+    id: number;
+    title: string;
+    level: 'advanced' | 'average' | 'basic';
+    icon: string;
+    type: 'language'| 'frontend' | 'backend' | 'database' | 'devtools';
+}[] = [
+    {
+        id: 14,
+        title: 'HTML',
+        level: 'advanced',
+        icon: 'logo/html.avif',
+        type: 'frontend',
+    },
+    {
+        id: 15,
+        title: 'CSS',
+        level: 'advanced',
+        icon: 'logo/css.avif',
+        type: 'frontend',
+    },
+    {
+        id: 5,
+        title: 'PHP',
+        level: 'advanced',
+        icon: 'logo/php.avif',
+        type: 'language',
+    },
+    {
+        id: 3,
+        title: 'Typescript',
+        level: 'advanced',
+        icon: 'logo/typescript.avif',
+        type: 'language',
+    },
+    {
+        id: 4,
+        title: 'JS',
+        level: 'advanced',
+        icon: 'logo/js.avif',
+        type: 'language',
+    },
 	{
 		id: 1,
 		title: 'React',
-		level: 'average',
+		level: 'advanced',
 		icon: 'logo/react.avif',
 		type: 'frontend',
 	},
 	{
 		id: 2,
 		title: 'Next.js',
-		level: 'average',
+		level: 'advanced',
 		icon: 'logo/nextjs.avif',
 		type: 'frontend',
 	},
@@ -30,7 +71,7 @@ export const skills = [
 	{
 		id: 22,
 		title: 'Tailwind',
-		level: 'average',
+		level: 'advanced',
 		icon: 'logo/tailwind.avif',
 		type: 'frontend',
 	},
@@ -58,7 +99,7 @@ export const skills = [
 	{
 		id: 12,
 		title: 'Nest.js',
-		level: 'basic',
+		level: 'average',
 		icon: 'logo/nestjs.avif',
 		type: 'backend',
 	},
@@ -72,7 +113,7 @@ export const skills = [
 	{
 		id: 7,
 		title: 'PostgreSQL',
-		level: 'average',
+		level: 'advanced',
 		icon: 'logo/postgresql.avif',
 		type: 'database',
 	},
@@ -104,41 +145,6 @@ export const skills = [
 		level: 'average',
 		icon: 'logo/prisma.avif',
 		type: 'database',
-	},
-	{
-		id: 3,
-		title: 'Typescript',
-		level: 'average',
-		icon: 'logo/typescript.avif',
-		type: 'language',
-	},
-	{
-		id: 4,
-		title: 'JS',
-		level: 'average',
-		icon: 'logo/js.avif',
-		type: 'language',
-	},
-	{
-		id: 5,
-		title: 'PHP',
-		level: 'average',
-		icon: 'logo/php.avif',
-		type: 'language',
-	},
-	{
-		id: 14,
-		title: 'HTML',
-		level: 'advanced',
-		icon: 'logo/html.avif',
-		type: 'frontend',
-	},
-	{
-		id: 15,
-		title: 'CSS',
-		level: 'advanced',
-		icon: 'logo/css.avif',
-		type: 'frontend',
 	},
 	{
 		id: 17,

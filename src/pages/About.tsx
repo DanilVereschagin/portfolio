@@ -1,83 +1,63 @@
+import {LiquidGlassCard} from "../components/ui-layouts/LiquidGlassCard.tsx";
+
 const About = () => {
 	return (
 		<div className='flex flex-col gap-4 items-center'>
 			<div className='w-full flex justify-center h-fit gap-4 flex-col md:flex-row '>
-				<div
-					className='bg-white w-full md:w-[30%] lg:w-[14%] flex flex-col 
+				<LiquidGlassCard
+                    shadowIntensity='sm'
+                    borderRadius='24px'
+                    glowIntensity='none'
+                    blurIntensity={"sm"}
+                    draggable={false}
+					className='bg-white/16 text-white w-full md:w-[30%] lg:w-[14%] flex flex-col
 					items-center p-4 rounded-xl'
 				>
 					<img
 						width={200}
 						height={200}
-						className='rounded-full'
+						className='rounded-full z-100'
 						src='photo.jpg'
 						alt='фото'
 					/>
-					<h1 className='text-2xl font-bold text-center'>Верещагин Данил</h1>
-					<b className='text-center'>Веб-разработчик</b>
-				</div>
-				<div
-					className='bg-white w-full lg:w-[76%] px-4 text-xl rounded-xl 
+					<h1 className='text-2xl font-bold text-center z-100'>Верещагин Данил</h1>
+					<b className='text-center z-100'>Веб-разработчик</b>
+				</LiquidGlassCard>
+				<LiquidGlassCard
+                    draggable={false}
+                    shadowIntensity='sm'
+                    borderRadius='24px'
+                    glowIntensity='none'
+                    blurIntensity={"sm"}
+					className='bg-white/16 text-white w-full lg:w-[76%] px-4 text-xl rounded-xl
 					flex flex-col justify-evenly'
 				>
-					<div className='py-2 flex sm:flex-col md:flex-row gap-2'>
-						<b className='w-[24%] lg:w-[10%]'>Email: </b>
+					<div className='py-4 flex flex-wrap gap-2 z-100'>
+						<b className='min-w-[120px]'>Email: </b>
 						<p>diafin.bernuly@mail.ru</p>
 					</div>
-					<hr className='text-gray-200' />
-					<div className='py-2 flex gap-2'>
-						<b className='w-[28%] md:w-[24%] lg:w-[10%]'>Телефон: </b>
+					<hr className='text-gray-200 z-100' />
+					<div className='py-4 flex flex-wrap gap-2 z-100'>
+						<b className='min-w-[120px]'>Телефон: </b>
 						<p>+7 928 615 90 30</p>
 					</div>
-					<hr className='text-gray-200' />
-					<div className='py-2 flex gap-2'>
-						<b className='w-[24%] lg:w-[10%]'>Адрес: </b>
-						<p>Таганрог, Ростовская область</p>
-					</div>
-					<hr className='text-gray-200' />
-					<div className='py-2 flex gap-2'>
-						<b className='w-[19%] lg:w-[11%]'>О себе: </b>
-						<p>
-							Имею высшее образование направления "Программная инженерия" ИТА
-							ЮФУ (ИКТИБ). Имею коммерческий опыт в разработке веб-приложений.
-						</p>
-					</div>
-				</div>
-			</div>
-			<div
-				className='bg-white w-full lg:w-[91%] px-4 text-xl rounded-xl 
-					flex flex-col justify-center'
-			>
-				<div className='py-2 flex gap-2 flex-col md:flex-row'>
-					<b className='w-[20%] md:w-[12%] lg:w-[8%]'>Github: </b>
-					<a href='https://github.com/DanilVereschagin' target='_blank'>
-						https://github.com/DanilVereschagin
-					</a>
-				</div>
-				<hr className='text-gray-200' />
-				<div className='py-2 flex gap-2'>
-					<b className='w-[10%] md:w-[12%] lg:w-[8%]'>VK: </b>
-					<a href='https://vk.com/aurus.void' target='_blank'>
-						https://vk.com/aurus.void
-					</a>
-				</div>
-				<hr className='text-gray-200' />
-				<div className='py-2 flex gap-2'>
-					<b className='w-[28%] md:w-[12%] lg:w-[8%]'>Telegram: </b>
-					<a href='https://t.me/DifBer' target='_blank'>
-						@DifBer
-					</a>
-				</div>
-				<hr className='text-gray-200' />
-				<div className='py-2 flex gap-2 '>
-					<b className=' lg:w-[8%]'>hh: </b>
-					<a
-						href='https://taganrog.hh.ru/resume/0f863b9fff0d57a5a30039ed1f477661564b59'
-						target='_blank'
-					>
-						Перейти
-					</a>
-				</div>
+					<hr className='text-gray-200 z-100' />
+                    <div className='py-4 flex flex-wrap items-center gap-2 z-100'>
+                        <b className='min-w-[120px]'>Ссылки: </b>
+                        <a href="https://t.me/DifBer" className={'z-100 w-10 md:w-20'}>
+                            <img src="socials/tg.png" alt=""/>
+                        </a>
+                        <a href="https://github.com/DanilVereschagin" className={'z-100 w-10 md:w-20'}>
+                            <img src="socials/github.png" alt=""/>
+                        </a>
+                        <a href="https://vk.com/aurus.void" className={'z-100 w-10 md:w-20'}>
+                            <img src="socials/vk.png" alt=""/>
+                        </a>
+                        <a href="https://taganrog.hh.ru/resume/0f863b9fff0d57a5a30039ed1f477661564b59" className={'z-100 w-10 md:w-20'}>
+                            <img src="socials/hh.png" className={'rounded-xl'} alt=""/>
+                        </a>
+                    </div>
+				</LiquidGlassCard>
 			</div>
 		</div>
 	);

@@ -1,6 +1,7 @@
 import { Link } from '../components/Link/Link';
 import { memo } from 'react';
 import { projects } from '../shared/constant/projects';
+import {LiquidGlassCard} from "../components/ui-layouts/LiquidGlassCard.tsx";
 
 const Projects = memo(() => {
 	return (
@@ -8,17 +9,21 @@ const Projects = memo(() => {
 			<div className='flex flex-col gap-4 lg:items-center-safe'>
 				{projects.map((project) => (
 					<>
-						<div
+						<LiquidGlassCard
 							key={project.id}
-							className='bg-gray-950 rounded-xl p-4 flex flex-col md:flex-row gap-4 lg:w-[70%] lg:h-[33vh]'
+                            shadowIntensity='sm'
+                            borderRadius='24px'
+                            glowIntensity='none'
+                            blurIntensity={"sm"}
+							className='bg-white/8 rounded-xl p-4 flex flex-col md:flex-row gap-4 lg:w-[70%] lg:min-h-[33vh]'
 						>
 							<img
-								className='w-full md:w-[50%] lg:w-[40%]'
+								className='w-full md:w-[50%] lg:w-[40%] z-100'
 								src={project.image}
 								alt=''
 							/>
-							<div className='bg-white md:w-0.5 ' />
-							<div className='flex flex-col gap-4 justify-center lg:justify-center-safe p-2 lg:w-full'>
+							<div className='bg-white md:w-0.5 z-100' />
+							<div className='flex flex-col gap-4 justify-center lg:justify-center-safe p-2 lg:w-full z-100'>
 								<h1 className='text-white text-2xl lg:text-5xl font-bold'>
 									{project.title}
 								</h1>
@@ -28,11 +33,12 @@ const Projects = memo(() => {
 								</p>
 								<Link
 									className='text-center font-bold w-[120px]'
+                                    linkClassName={'text-sm md:text-md lg:text-lg'}
 									url={project.url}
 									title='Перейти'
 								/>
 							</div>
-						</div>
+						</LiquidGlassCard>
 						<div className='bg-white h-0.5 md:h-0 ' />
 					</>
 				))}

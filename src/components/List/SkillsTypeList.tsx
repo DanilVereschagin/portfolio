@@ -1,7 +1,7 @@
 import { memo } from 'react';
 import { skills, types } from '../../shared/constant/skills';
 import type { skillType } from '../../shared/types/types';
-import * as motion from 'motion/react-client';
+import {LiquidGlassCard} from "../ui-layouts/LiquidGlassCard.tsx";
 
 type GroupByType = {
 	[key: string]: skillType[];
@@ -20,27 +20,20 @@ const SkillsTypeList = memo(() => {
 		<div className='mt-10 p-2'>
 			<div className='flex flex-col gap-4'>
 				{types.map((type) => (
-					<div
+					<LiquidGlassCard
 						key={type}
-						className='bg-gray-950 rounded-xl p-4 flex flex-col gap-4'
+                        shadowIntensity='sm'
+                        borderRadius='24px'
+                        glowIntensity='none'
+                        blurIntensity={"sm"}
+                        draggable={false}
+						className='bg-white/8 rounded-xl p-4 flex flex-col gap-4'
 					>
-						<h1 className='text-white text-2xl text-center md:text-start'>
+						<h1 className='text-white text-2xl text-center md:text-start z-100'>
 							{type[0].toUpperCase() + type.slice(1)}
 						</h1>
-						<div className='flex flex-row gap-4 flex-wrap justify-center md:justify-start'>
+						<div className='flex flex-row gap-4 flex-wrap justify-center md:justify-start z-100'>
 							{groupByType[`${type}`].map((skill: skillType) => (
-								<motion.div
-									initial={{ opacity: 0, scale: 0.5 }}
-									animate={{ opacity: 1, scale: 1 }}
-									transition={{
-										duration: 0.5,
-										scale: {
-											type: 'spring',
-											visualDuration: 0.5,
-											bounce: 0.5,
-										},
-									}}
-								>
 									<div
 										key={skill.id}
 										className='bg-white w-[100px] h-[110px] 
@@ -57,10 +50,9 @@ const SkillsTypeList = memo(() => {
 										/>
 										<b>{skill.title}</b>
 									</div>
-								</motion.div>
 							))}
 						</div>
-					</div>
+					</LiquidGlassCard>
 				))}
 			</div>
 		</div>

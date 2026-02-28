@@ -18,7 +18,7 @@ const MainCard: React.FC<Props> = ({ title, info, url, className, icon }) => {
             borderRadius='24px'
             glowIntensity='none'
             blurIntensity={"sm"}
-            className={cn('rounded-3xl p-6 text-white bg-white/2 flex flex-col', className)}
+            className={cn('rounded-3xl p-6 text-white bg-white/4 flex flex-col', className)}
         >
             <NavLink to={url} className='relative z-30 flex flex-col items-center justify-center h-full'>
                 {icon}
