@@ -17,7 +17,7 @@ export const Link: React.FC<Props> = ({ url, title, className, linkClassName }) 
             borderRadius='8px'
             glowIntensity='none'
             blurIntensity={"sm"}
-            className={cn('p-2 text-white bg-white/4 flex flex-col', className)}
+            className={cn('p-2 text-white bg-white/4 flex flex-col hover:bg-white/16', className)}
         >
             <NavLink
                 to={url}

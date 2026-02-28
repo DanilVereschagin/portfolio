@@ -5,6 +5,7 @@ import { Title } from '../components/Project/Title';
 import type { projectType } from '../shared/types/types';
 import { Tools } from '../components/Project/Tools';
 import { Images } from '../components/Project/Images';
+import {LiquidGlassCard} from "../components/ui-layouts/LiquidGlassCard.tsx";
 
 const Project = () => {
 	const [projectName, setProjectName] = useState('');
@@ -41,11 +42,19 @@ const Project = () => {
 				github={project.github}
 				className='m-4'
 			/>
-			<img
-				className='w-full md:w-[80%] lg:w-[60%]'
-				src={project.image}
-				alt={projectName}
-			/>
+            <LiquidGlassCard
+                shadowIntensity='sm'
+                borderRadius='24px'
+                glowIntensity='none'
+                blurIntensity={"sm"}
+                className='bg-white/8 rounded-xl p-4 flex w-full md:w-[80%] lg:w-[60%]'
+            >
+                <img
+                    className='w-full rounded-2xl z-100'
+                    src={project.image}
+                    alt={projectName}
+                />
+            </LiquidGlassCard>
 			<Tools
 				tools={project.tools}
 				className='m-4 w-full md:w-[80%] lg:w-[60%]'
