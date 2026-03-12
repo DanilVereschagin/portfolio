@@ -1,5 +1,5 @@
 import React from 'react';
-import { cn } from '../../shared/lib/utils';
+import { cn } from '../../lib/utils';
 import {LiquidGlassCard} from "../ui-layouts/LiquidGlassCard.tsx";
 
 interface Props {

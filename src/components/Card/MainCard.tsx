@@ -1,7 +1,9 @@
 import React, {type ReactNode} from 'react';
-import {cn} from "../../shared/lib/utils.ts";
+import {cn} from "../../lib/utils.ts";
 import {LiquidGlassCard} from "../ui-layouts/LiquidGlassCard.tsx";
 import {NavLink} from "react-router-dom";
+import {BentoCard} from "../ui/bento-grid.tsx";
+import {Meteors} from "../ui/meteors.tsx";
 
 interface Props {
 	title: string;
@@ -9,9 +11,12 @@ interface Props {
 	url: string;
     className?: string;
     icon?: ReactNode;
+    feature:  {
+        background: ReactNode
+    }
 }
 
-const MainCard: React.FC<Props> = ({ title, info, url, className, icon }) => {
+const MainCard: React.FC<Props> = ({ title, info, url, className, icon, feature }) => {
     return (
         <LiquidGlassCard
             shadowIntensity='sm'
@@ -20,10 +25,11 @@ const MainCard: React.FC<Props> = ({ title, info, url, className, icon }) => {
             blurIntensity={"sm"}
             className={cn('rounded-3xl p-6 text-white bg-white/4 flex flex-col', className)}
         >
+            <div className="absolute h-[300px] w-full overflow-hidden">
+                <Meteors number={40} />
+            </div>
             <NavLink to={url} className='relative z-30 flex flex-col items-center justify-center h-full'>
-                {icon}
-                <div className='text-6xl font-semibold'>{title}</div>
-                <div className='text-lg mt-2 text-center'>{info}</div>
+                <BentoCard name={title} className={'w-full bg-transparent border-none shadow-none'} background={feature.background} Icon={icon} description={info} href={'#'} cta={''} />
             </NavLink>
         </LiquidGlassCard>
     );

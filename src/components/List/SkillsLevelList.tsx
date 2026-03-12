@@ -2,6 +2,7 @@ import { memo } from 'react';
 import { skills, levels } from '../../shared/constant/skills';
 import type { skillType } from '../../shared/types/types';
 import {LiquidGlassCard} from "../ui-layouts/LiquidGlassCard.tsx";
+import {SkillCard} from "../Card/SkillCard.tsx";
 
 type GroupByLevel = {
 	[key: string]: skillType[];
@@ -34,22 +35,11 @@ const SkillsLevelList = memo(() => {
 						</h1>
 						<div className='flex flex-row gap-4 flex-wrap justify-center md:justify-start z-100'>
 							{groupByLevel[`${level.en}`].map((skill: skillType) => (
-									<div
+									<SkillCard
 										key={skill.id}
-										className='bg-white w-[100px] h-[110px] 
-						flex flex-col items-center p-3 rounded-xl
-						shadow-xl/15 shadow-white hover:shadow-xl/30 
-						transform transition-all duration-300 hover:-translate-y-1'
-									>
-										<img
-											width={90}
-											height={90}
-											src={skill.icon}
-											alt={skill.title}
-											loading='lazy'
-										/>
-										<b>{skill.title}</b>
-									</div>
+                                        icon={skill.icon}
+                                        title={skill.title}
+                                    />
 							))}
 						</div>
 					</LiquidGlassCard>

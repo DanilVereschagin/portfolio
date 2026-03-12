@@ -1,8 +1,9 @@
 import {LiquidGlassCard} from "../components/ui-layouts/LiquidGlassCard.tsx";
+import {RetroGrid} from "../components/ui/retro-grid.tsx";
 
 const About = () => {
 	return (
-		<div className='flex flex-col gap-4 items-center'>
+		<>
 			<div className='w-full flex justify-center h-fit gap-4 flex-col md:flex-row '>
 				<LiquidGlassCard
                     shadowIntensity='sm'
@@ -59,7 +60,13 @@ const About = () => {
                     </div>
 				</LiquidGlassCard>
 			</div>
-		</div>
+            <div className="bg-black relative hidden md:flex md:h-[500px] flex-col items-center justify-center overflow-hidden rounded-lg">
+                <span className="pointer-events-none z-10 bg-linear-to-b from-[#ffffff] via-[#ffffff] to-[#000000] bg-clip-text text-center text-7xl leading-none font-bold tracking-tighter whitespace-pre-wrap text-transparent">
+                    Контактная информация
+                </span>
+                <RetroGrid lightLineColor="rgba(255, 255, 255, 0.5)" />
+            </div>
+		</>
 	);
 };
 

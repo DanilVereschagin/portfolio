@@ -1,6 +1,6 @@
 import React, {type ReactNode} from 'react';
 import { NavLink } from 'react-router-dom';
-import { cn } from '../../shared/lib/utils';
+import { cn } from '../../lib/utils';
 import {LiquidGlassCard} from "../ui-layouts/LiquidGlassCard.tsx";
 
 interface Props {

@@ -1,7 +1,7 @@
 'use client';
 import React, { useState, type MouseEvent } from 'react';
 import { motion, type Variants } from 'motion/react';
-import { cn } from '../../shared/lib/utils';
+import { cn } from '../../lib/utils';
 
 interface LiquidGlassCardProps {
 	children: React.ReactNode;
@@ -163,6 +163,8 @@ export const LiquidGlassCard = ({
 					borderRadius,
 					...(width && !expandable && { width }),
 					...(height && !expandable && { height }),
+					overflow: 'hidden',
+					position: 'relative',
 				}}
 				{...motionProps}
 				{...props}
