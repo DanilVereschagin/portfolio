@@ -5,9 +5,9 @@ import type { projectType } from '../shared/types/types';
 import { Tools } from '../components/Project/Tools';
 import { Images } from '../components/Project/Images';
 import {LiquidGlassCard} from "../components/ui-layouts/LiquidGlassCard.tsx";
-import {projects} from "../shared/constant/projects.ts";
+import {petProjects} from "../shared/constant/pet-projects.ts";
 
-const Project = () => {
+const PetProject = () => {
 	const [projectName, setProjectName] = useState('');
 	const [project, setProject] = useState<projectType>({
 		id: 0,
@@ -21,14 +21,14 @@ const Project = () => {
 	});
 
 	useEffect(() => {
-		const project = projects.find(
-			(project) => project.url === window.location.pathname.split('/').pop()
-		);
+        const petProject = petProjects.find(
+            (project) => project.url === window.location.pathname.split('/').pop()
+        );
 
-		if (project) {
-			setProjectName(project.title);
-			setProject(project as projectType);
-		}
+        if (petProject) {
+            setProjectName(petProject.title);
+            setProject(petProject as projectType);
+        }
 	}, []);
 
 	if (!projectName) {
@@ -42,7 +42,6 @@ const Project = () => {
 				description={project.description}
 				github={project.github}
 				className='m-4'
-                commerce
 			/>
             <LiquidGlassCard
                 shadowIntensity='sm'
@@ -71,4 +70,4 @@ const Project = () => {
 	);
 };
 
-export default Project;
+export default PetProject;

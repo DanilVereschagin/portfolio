@@ -1,13 +1,13 @@
 import { Link } from '../components/Link/Link';
 import { memo } from 'react';
+import {petProjects} from '../shared/constant/pet-projects';
 import {LiquidGlassCard} from "../components/ui-layouts/LiquidGlassCard.tsx";
-import {projects} from "../shared/constant/projects.ts";
 
-const Projects = memo(() => {
+const PetProjects = memo(() => {
 	return (
 		<div className='mt-10 p-2'>
 			<div className='flex flex-col gap-4 lg:items-center-safe'>
-				{projects.map((project) => (
+				{petProjects.map((project) => (
 					<>
 						<LiquidGlassCard
 							key={project.id}
@@ -47,4 +47,4 @@ const Projects = memo(() => {
 	);
 });
 
-export default Projects;
+export default PetProjects;

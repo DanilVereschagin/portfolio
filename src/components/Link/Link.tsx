@@ -21,7 +21,7 @@ export const Link: React.FC<Props> = ({ url, title, className, linkClassName }) 
         >
             <NavLink
                 to={url}
-                className={cn('text-xs sm:text-sm md:text-lg p-2 text-white z-100', linkClassName)}
+                className={cn('text-sm sm:text-sm md:text-lg p-2 text-white z-100', linkClassName)}
             >
                 {title}
             </NavLink>

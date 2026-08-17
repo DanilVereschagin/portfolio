@@ -7,6 +7,7 @@ interface Props {
 	description: string;
 	github: string;
 	className?: string;
+    commerce?: boolean;
 }
 
 export const Title: React.FC<Props> = ({
@@ -14,6 +15,7 @@ export const Title: React.FC<Props> = ({
 	description,
 	github,
 	className,
+    commerce,
 }) => {
 	return (
 		<div className={cn('flex flex-col gap-4 items-center w-full', className)}>
@@ -34,7 +36,7 @@ export const Title: React.FC<Props> = ({
                     target='_blank'
                     className=' text-white text-center text-xl font-bold z-120'
                 >
-                    Код на GitHub
+                    {commerce ? "Перейти на сайт" : "Код на GitHub" }
                 </a>
             </LiquidGlassCard>
 		</div>

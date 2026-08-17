@@ -54,6 +54,13 @@ export const skills: {
 		icon: 'logo/nextjs.avif',
 		type: 'frontend',
 	},
+    {
+        id: 38,
+        title: 'Yii2',
+        level: 'advanced',
+        icon: 'logo/yii2.png',
+        type: 'backend',
+    },
 	{
 		id: 11,
 		title: 'Node.js',
@@ -64,7 +71,7 @@ export const skills: {
 	{
 		id: 16,
 		title: 'SCSS',
-		level: 'average',
+		level: 'advanced',
 		icon: 'logo/scss.avif',
 		type: 'frontend',
 	},
@@ -75,6 +82,13 @@ export const skills: {
 		icon: 'logo/tailwind.avif',
 		type: 'frontend',
 	},
+    {
+        id: 39,
+        title: 'AntD',
+        level: 'advanced',
+        icon: 'logo/antd.png',
+        type: 'frontend',
+    },
 	{
 		id: 23,
 		title: 'Bootstrap',
@@ -104,13 +118,6 @@ export const skills: {
 		type: 'backend',
 	},
 	{
-		id: 13,
-		title: 'Magento 2',
-		level: 'basic',
-		icon: 'logo/magento.avif',
-		type: 'backend',
-	},
-	{
 		id: 7,
 		title: 'PostgreSQL',
 		level: 'advanced',
@@ -121,7 +128,7 @@ export const skills: {
 	{
 		id: 6,
 		title: 'MySQL',
-		level: 'average',
+		level: 'advanced',
 		icon: 'logo/mysql.avif',
 		type: 'database',
 	},
@@ -149,7 +156,7 @@ export const skills: {
 	{
 		id: 17,
 		title: 'REST API',
-		level: 'average',
+		level: 'advanced',
 		icon: 'logo/restapi.avif',
 		type: 'backend',
 	},
@@ -184,7 +191,7 @@ export const skills: {
 	{
 		id: 26,
 		title: 'Redux',
-		level: 'average',
+		level: 'advanced',
 		icon: 'logo/redux.avif',
 		type: 'frontend',
 	},
@@ -205,7 +212,7 @@ export const skills: {
 	{
 		id: 29,
 		title: 'Auth.js',
-		level: 'average',
+		level: 'advanced',
 		icon: 'logo/authjs.avif',
 		type: 'frontend',
 	},
@@ -261,7 +268,7 @@ export const skills: {
 	{
 		id: 34,
 		title: 'Git',
-		level: 'average',
+		level: 'advanced',
 		icon: 'logo/git.avif',
 		type: 'devtools',
 	},

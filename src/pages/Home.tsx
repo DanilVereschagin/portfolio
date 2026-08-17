@@ -4,8 +4,6 @@ import MainCard from '../components/Card/MainCard';
 import classes from '../components/Card/MainCard.module.scss';
 import { skills } from '../shared/constant/skills';
 import {IconCloud} from "../components/ui/icon-cloud.tsx";
-import {ScrollVelocityContainer, ScrollVelocityRow} from "../components/ui/scroll-based-velocity.tsx";
-import {AuroraText} from "../components/ui/aurora-text.tsx";
 
 const images = skills.map(
     (skill) => `/portfolio/${skill.icon}`
@@ -57,14 +55,6 @@ const Home = () => {
                     feature={features[2]}
                 />
             </div>
-            <ScrollVelocityContainer className="text-2xl font-bold hidden md:block md:text-4xl lg:text-7xl">
-                <ScrollVelocityRow baseVelocity={20} direction={1}>
-                    <AuroraText>Портфолио</AuroraText>
-                </ScrollVelocityRow>
-                <ScrollVelocityRow baseVelocity={20} direction={-1}>
-                    <AuroraText>Верещагин Данил</AuroraText>
-                </ScrollVelocityRow>
-            </ScrollVelocityContainer>
         </>
 	);
 };

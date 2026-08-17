@@ -6,6 +6,8 @@ const About = lazy(() => import('../../pages/About'));
 const Skills = lazy(() => import('../../pages/Skills'));
 const Projects = lazy(() => import('../../pages/Projects'));
 const Project = lazy(() => import('../../pages/Project'));
+const PetProjects = lazy(() => import('../../pages/PetProjects'));
+const PetProject = lazy(() => import('../../pages/PetProject'));
 const NotFound = lazy(() => import('../../pages/NotFound'));
 
 const Router = () => {
@@ -15,8 +17,10 @@ const Router = () => {
 				<Route path='' Component={Home} />
 				<Route path='about' Component={About} />
 				<Route path='skills' Component={Skills} />
-				<Route path='projects' Component={Projects} />
-				<Route path='/projects/*' Component={Project} />
+                <Route path='projects' Component={Projects} />
+                <Route path='/projects/*' Component={Project} />
+				<Route path='pet-projects' Component={PetProjects} />
+				<Route path='/pet-projects/*' Component={PetProject} />
 				<Route path='*' Component={NotFound} />
 			</Routes>
 		</Suspense>
