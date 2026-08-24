@@ -1,17 +1,12 @@
-import orionDeliveryLogo from '../../assets/Logo/orion_delivery.jpg';
-
-import orionDelivery1 from '../../assets/Web/OrionDelivery/1.png';
-import orionDelivery2 from '../../assets/Web/OrionDelivery/2.png';
-import orionDelivery3 from '../../assets/Web/OrionDelivery/3.png';
-import orionDelivery4 from '../../assets/Web/OrionDelivery/4.png';
-import orionDelivery5 from '../../assets/Web/OrionDelivery/5.png';
-import orionDelivery6 from '../../assets/Web/OrionDelivery/6.png';
-import orionDelivery7 from '../../assets/Web/OrionDelivery/7.png';
-import orionDelivery8 from '../../assets/Web/OrionDelivery/8.png';
-import orionDelivery9 from '../../assets/Web/OrionDelivery/9.png';
-import orionDelivery10 from '../../assets/Web/OrionDelivery/10.png';
-import orionDelivery11 from '../../assets/Web/OrionDelivery/11.png';
-import orionDelivery12 from '../../assets/Web/OrionDelivery/12.png';
+import pgz1 from '../../assets/Web/Progoszakaz/1.png';
+import pgz2 from '../../assets/Web/Progoszakaz/2.png';
+import pgz21 from '../../assets/Web/Progoszakaz/2_1.png';
+import pgz211 from '../../assets/Web/Progoszakaz/2_1_1.png';
+import pgz22 from '../../assets/Web/Progoszakaz/2_2.png';
+import pgz3 from '../../assets/Web/Progoszakaz/3.png';
+import pgz4 from '../../assets/Web/Progoszakaz/4.png';
+import pgz5 from '../../assets/Web/Progoszakaz/5.png';
+import pgz6 from '../../assets/Web/Progoszakaz/6.png';
 
 export const projects = [
 	{
@@ -19,19 +14,34 @@ export const projects = [
 		title: 'Прогосзаказ',
 		description: 'Веб-приложения для гос. закупок',
 		technologies:
-			'PHP, Yii2, MySQL, TypeScript, React, Next.js, Docker, Tailwind, AntD, Redux Toolkit, RTK Query, REST API, Zod, Auth.js, Git',
+			'PHP, Yii2, MySQL, TypeScript, React, Next.js, Axios, Docker, Tailwind, AntD, Redux Toolkit, RTK Query, REST API, Zod, Auth.js, Git',
 		url: 'progoszakaz',
-		image: orionDeliveryLogo,
+		image: pgz1,
 		github: 'https://xn--80aahqcqybgko.xn--p1ai/',
 		tools: [
+            {
+                title: 'PHP',
+                description: 'Backend проекта написан на PHP',
+                icon: 'logo/php.avif',
+            },
+            {
+                title: 'Yii2',
+                description: 'В качестве фреймворка для серверной части использовался Yii2',
+                icon: 'logo/yii2.png',
+            },
+            {
+                title: 'MySQL',
+                description: 'В качестве СУБД используется MySQL',
+                icon: 'logo/mysql.avif',
+            },
 			{
 				title: 'TypeScript',
-				description: 'Весь проект написан с помощью TypeScript',
+				description: 'Клиентская часть написана на TypeScript',
 				icon: 'logo/typescript.avif',
 			},
 			{
 				title: 'Next.js',
-				description: 'Клиентская и серверная часть написана с помощью Next.js',
+				description: 'Клиентская часть реализована с помощью Next.js',
 				icon: 'logo/nextjs.avif',
 			},
 			{
@@ -39,36 +49,21 @@ export const projects = [
 				description: 'Дизайн сайта сделан с помощью Tailwind',
 				icon: 'logo/tailwind.avif',
 			},
+            {
+                title: 'AntD',
+                description:
+                    'Использовалась библиотека готовых компонентов AntD',
+                icon: 'logo/antd.png',
+            },
 			{
-				title: 'ShadCN',
-				description: 'Использовалась библиотека готовых компонентов ShadCN',
-				icon: 'logo/shadcn.avif',
+				title: 'Redux',
+				description: 'В качестве менеджера состояния используется Redux Toolkit',
+				icon: 'logo/redux.avif',
 			},
 			{
-				title: 'react-use',
-				description: 'Использовались хуки из библиотеки react-use',
-				icon: 'logo/react.avif',
-			},
-			{
-				title: 'Zustand',
-				description: 'В качестве менеджера состояния используется Zustand',
-				icon: 'logo/zustand.avif',
-			},
-			{
-				title: 'PostgreSQL',
-				description: 'В качестве СУБД используется PostgreSQL',
-				icon: 'logo/postgresql.avif',
-			},
-			{
-				title: 'Prisma',
-				description: 'Для работы с базой данных используется ORM Prisma',
-				icon: 'logo/prisma.avif',
-			},
-			{
-				title: 'RHF',
-				description:
-					'Для работы с формами используется библиотека React Hook Form',
-				icon: 'logo/rhf.avif',
+				title: 'Axios',
+				description: 'Для запросов использовался Axios и встроенный в Next.js fetch с кэшированием и ревалидацией',
+				icon: 'logo/axios.avif',
 			},
 			{
 				title: 'Zod',
@@ -76,84 +71,66 @@ export const projects = [
 				icon: 'logo/zod.webp',
 			},
 			{
-				title: 'Dadata',
-				description:
-					'Для поиска существующих адресов используется библиотека Dadata',
-				icon: 'logo/dadata.avif',
-			},
-			{
-				title: 'RESEND',
-				description:
-					'Для отправки электронных писем используется библиотека RESEND',
-				icon: 'logo/resend.webp',
-			},
-			{
 				title: 'Auth.js',
 				description:
 					'Для регистрации и аутентификации пользователей, а также сессий используется библиотека Auth.js',
 				icon: 'logo/authjs.avif',
 			},
-			{
-				title: 'Jest',
-				description: 'Для Unit-тестирования используется библиотека Jest',
-				icon: 'logo/jest.webp',
-			},
+            {
+                title: 'Docker',
+                description:
+                    'Для контейниризации использовался Docker',
+                icon: 'logo/docker.avif',
+            },
+            {
+                title: 'Git',
+                description:
+                    'Для контроля версий кода использовался Git',
+                icon: 'logo/git.avif',
+            },
 		],
 		images_gallery: [
 			{
-				url: orionDelivery2,
+				url: pgz1,
 				description:
-					'Страница регистрации и авторизации с возможностью входа через сторонние сервисы',
+					'Основная страница с таблицей позиций ТРУ (товар-работа-услуга)',
 			},
 			{
-				url: orionDelivery1,
-				description: 'Главная страница со списком блюд и фильтрами',
+				url: pgz2,
+				description: 'Страница редактирования позиции ТРУ, функционал которой разделён на вкладки. Рассмотрим некоторые:',
 			},
 			{
-				url: orionDelivery3,
+				url: pgz21,
 				description:
-					'Модальное окно блюда с возможностью выбора вариаций и дополнительных ингредиентов',
+					'Вкладка поиска товара в РРПП',
 			},
 			{
-				url: orionDelivery4,
+				url: pgz211,
 				description:
-					'Страница с информацией о конкретном блюде. Функционал идентичен модальному окну, а также есть возможность оставлять и просматривать отзывы',
+					'Модальное окно с информацией о товаре из РРПП',
 			},
 			{
-				url: orionDelivery5,
+				url: pgz22,
 				description:
-					'Корзина с возможностью изменения количества блюд или их удалением',
+					'Вкладка информации ООЗ (характеристики, товарный знак и т.п.)',
 			},
 			{
-				url: orionDelivery6,
+				url: pgz3,
 				description:
-					'Страница оформления заказа. Присутствует возможность выбора типа доставки, а также активации промокода',
+					'Страница со списком извещений',
 			},
 			{
-				url: orionDelivery7,
-				description: 'Страница оплаты заказа',
+				url: pgz4,
+				description: 'Страница извещения с информацией о расчётах НМЦК',
 			},
 			{
-				url: orionDelivery8,
-				description: 'Страница профиля пользователя со списком его заказов',
+				url: pgz5,
+				description: 'Страница расчёта НМЦК со списком контрактов',
 			},
 			{
-				url: orionDelivery9,
+				url: pgz6,
 				description:
-					'Страница админ-панели с информацией о заказах и возможностью изменения их статуса',
-			},
-			{
-				url: orionDelivery10,
-				description:
-					'Страница со списком пользователей и возможностью редактирования информации о них',
-			},
-			{
-				url: orionDelivery11,
-				description: 'Страница со статистикой продаж',
-			},
-			{
-				url: orionDelivery12,
-				description: 'Страница создания промокодов',
+					'Страница экспорта документов',
 			},
 		],
 	},
