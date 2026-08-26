@@ -1,3 +1,6 @@
+import pgzLogo from '../../assets/Logo/pgz.svg';
+import supersmmLogo from '../../assets/Logo/supersmm.png';
+
 import pgz1 from '../../assets/Web/Progoszakaz/1.png';
 import pgz2 from '../../assets/Web/Progoszakaz/2.png';
 import pgz21 from '../../assets/Web/Progoszakaz/2_1.png';
@@ -16,7 +19,7 @@ export const projects = [
 		technologies:
 			'PHP, Yii2, MySQL, TypeScript, React, Next.js, Axios, Docker, Tailwind, AntD, Redux Toolkit, RTK Query, REST API, Zod, Auth.js, Git',
 		url: 'progoszakaz',
-		image: pgz1,
+		image: pgzLogo,
 		github: 'https://xn--80aahqcqybgko.xn--p1ai/',
 		tools: [
             {
@@ -134,4 +137,85 @@ export const projects = [
 			},
 		],
 	},
+    {
+        id: 2,
+        title: 'Super-SMM (проект Super-VK)',
+        description: 'Расширение для управления аккаунтом ВК',
+        technologies:
+            'Vite, TypeScript, Nest.js, PostgreSQL, React.js, Axios, Material UI, SCSS, React-Hook-Form, VK API, Git',
+        url: 'supersmm',
+        image: supersmmLogo,
+        github: 'https://chromewebstore.google.com/detail/super-vk-20/lkhdjcjomgifjdihdiecifkigmdemjlh?hl=ru&utm_source=ext_sidebar',
+        tools: [
+            {
+                title: 'Vite',
+                description: 'В качестве сборщика приложения использовался Vite.',
+                icon: 'logo/vite.avif',
+            },
+            {
+                title: 'TypeScript',
+                description: 'Веб-приложение написано на TypeScript',
+                icon: 'logo/typescript.avif',
+            },
+            {
+                title: 'Nest.js',
+                description: 'В качестве фреймворка для серверной части использовался Nest.js',
+                icon: 'logo/nestjs.avif',
+            },
+            {
+                title: 'PostgreSQL',
+                description: 'В качестве СУБД используется PostgreSQL',
+                icon: 'logo/postgresql.avif',
+            },
+            {
+                title: 'React.js',
+                description: 'Клиентская часть реализована с помощью React.js',
+                icon: 'logo/react.avif',
+            },
+            {
+                title: 'Axios',
+                description: 'Для запросов к серверному API (в том числе и VK API) использовался Axios',
+                icon: 'logo/axios.avif',
+            },
+            {
+                title: 'SCSS',
+                description: 'Использовался синтаксис SCSS препроцессора Sass',
+                icon: 'logo/scss.avif',
+            },
+            {
+                title: 'MUI',
+                description:
+                    'Использовалась библиотека готовых компонентов MaterialUI',
+                icon: 'logo/mui.avif',
+            },
+            {
+                title: 'RHF',
+                description:
+                    'Для управления форм использовалась библиотека React-Hook-Form',
+                icon: 'logo/rhf.avif',
+            },
+            {
+                title: 'Git',
+                description:
+                    'Для контроля версий кода использовался Git',
+                icon: 'logo/git.avif',
+            },
+        ],
+        images_gallery: [
+            {
+                url: pgz1,
+                description:
+                    'Основная страница с таблицей позиций ТРУ (товар-работа-услуга)',
+            },
+            {
+                url: pgz2,
+                description: 'Страница редактирования позиции ТРУ, функционал которой разделён на вкладки. Рассмотрим некоторые:',
+            },
+            {
+                url: pgz21,
+                description:
+                    'Вкладка поиска товара в РРПП',
+            },
+        ],
+    },
 ];
