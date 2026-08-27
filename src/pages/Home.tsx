@@ -29,7 +29,7 @@ const features = [
 const Home = () => {
 	return (
         <>
-            <div className={'grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 mt-[20%] lg:mt-[10%] md:mt-[20%] mb-[10%]'}>
+            <div className={'grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 mt-[20%] lg:mt-[10%] md:mt-[20%] overflow-hidden mb-[10vh] md:mb-0'}>
                 <MainCard
                     className={cn(classes.stretch, 'w-full max-w-full')}
                     title='Обо мне'
