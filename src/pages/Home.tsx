@@ -29,9 +29,9 @@ const features = [
 const Home = () => {
 	return (
         <>
-            <div className={'center flex flex-row flex-wrap gap-10 items-center justify-center mt-[20%] lg:mt-[10%] md:mt-[20%] mb-[10%]'}>
+            <div className={'grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 mt-[20%] lg:mt-[10%] md:mt-[20%] mb-[10%]'}>
                 <MainCard
-                    className={cn(classes.stretch, 'w-[90%] max-w-full lg:w-[26%] lg:max-w-[26%] md:w-[45%] md:max-w-[45%]')}
+                    className={cn(classes.stretch, 'w-full max-w-full')}
                     title='Обо мне'
                     info='Контактная информация'
                     url='about'
@@ -39,7 +39,7 @@ const Home = () => {
                     feature={features[0]}
                 />
                 <MainCard
-                    className={cn(classes.stretch, 'w-[90%] max-w-full lg:w-[30%] lg:max-w-[30%] md:w-[45%] md:max-w-[45%]')}
+                    className={cn(classes.stretch, 'w-full max-w-full')}
                     title='Навыки'
                     info='Информация о навыках (изученных технологиях)'
                     url='skills'
@@ -47,10 +47,18 @@ const Home = () => {
                     feature={features[1]}
                 />
                 <MainCard
-                    className={cn(classes.stretch, 'w-[90%] max-w-full lg:w-[30%] lg:max-w-[30%] md:w-[45%] md:max-w-[45%]')}
+                    className={cn(classes.stretch, 'w-full max-w-full')}
                     title='Проекты'
                     info='Информация о проектах и используемых технологиях'
                     url='projects'
+                    icon={<Album className={'w-20 h-20 md:w-40 md:h-40'} />}
+                    feature={features[2]}
+                />
+                <MainCard
+                    className={cn(classes.stretch, 'w-full max-w-full')}
+                    title='Pet-проекты'
+                    info='Информация о pet-проектах и используемых технологиях'
+                    url='pet-projects'
                     icon={<Album className={'w-20 h-20 md:w-40 md:h-40'} />}
                     feature={features[2]}
                 />

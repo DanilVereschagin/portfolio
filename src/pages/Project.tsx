@@ -61,12 +61,15 @@ const Project = () => {
 				tools={project.tools}
 				className='m-4 w-full md:w-[80%] lg:w-[60%]'
 			/>
-			{project.images_gallery.length > 0 && (
-				<Images
-					images={project.images_gallery}
-					className='m-4 w-full md:w-[80%] lg:w-[60%]'
-				/>
-			)}
+            <div className={"flex justify-center w-full md:w-[80%] lg:w-[60%]"}>
+                <div className={"grid grid-cols-2 gap-4 center"}>
+                    {project.images_gallery.length > 0 && (
+                        <Images
+                            images={project.images_gallery}
+                        />
+                    )}
+                </div>
+            </div>
 		</div>
 	);
 };

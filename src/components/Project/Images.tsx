@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {Fragment} from 'react';
 import type { projectType } from '../../shared/types/types';
 
 interface Props {
@@ -6,24 +6,25 @@ interface Props {
 	className?: string;
 }
 
-export const Images: React.FC<Props> = ({ images, className }) => {
+export const Images: React.FC<Props> = ({ images }) => {
 	return (
-		<div className={className}>
-			<div className='flex flex-col flex-wrap justify-center gap-4'>
+		<Fragment>
 				{images.map((image) => (
-					<div key={image.url} className='flex flex-row gap-4'>
-						<img
-							className='w-[50%] rounded-2xl'
-							src={image.url}
-							alt=''
-							loading='lazy'
-						/>
-						<div className='hidden md:flex bg-white text-lg lg:text-xl text-center w-[50%] rounded-2xl p-2 justify-center items-center-safe'>
+					<Fragment key={image.url}>
+                        { image.url && (
+                            <img
+                                className='rounded-2xl'
+                                src={image.url}
+                                alt=''
+                                loading='lazy'
+                            />
+                        )}
+
+						<div className='hidden md:flex bg-white text-lg lg:text-xl text-center rounded-2xl p-2 justify-center items-center-safe'>
 							{image.description}
 						</div>
-					</div>
+					</Fragment>
 				))}
-			</div>
-		</div>
+		</Fragment>
 	);
 };
